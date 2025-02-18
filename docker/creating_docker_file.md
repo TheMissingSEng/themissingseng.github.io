@@ -107,17 +107,23 @@ ENTRYPOINT echo Hello $MY_NAME, you are logged in as $(whoami) && bash
 ---
 
 ## With the Dockerfile build you can...
+
 1. **Run a Container**
-  ```bash
-  docker run -d --name container_name image_name
-  ```
+
+```bash
+docker run -d --name container_name image_name
+```
+
 2. **Tag the Image**
+
 - This lets you tag the image and give it a version alias for easier management.
   ```bash
   docker tag image_name my_username/image_name:version
   ```
+
 3. **Push to a Registry and Pull**
-- If you want to store your image remotely in a registry like Docker Hub 
+
+- If you want to store your image remotely in a registry like Docker Hub
   ```bash
   docker push my_username/image_name:version
   ```
@@ -125,24 +131,28 @@ ENTRYPOINT echo Hello $MY_NAME, you are logged in as $(whoami) && bash
   ```bash
   docker pull my_username/image_name:version
   ```
+
 4. **Run the Image interactively**
+
 - Allowing you to troubleshoot and explore the environment inside it
   ```bash
   docker run -it image_name bash
   ```
 
 5. **View Container Info**
+
 - Inspecting an image allows you to view its layers and configurations
   ```bash
   docker inspect image_name
   ```
 - Viewing the image history (commands used durring the build)
-  ```bash 
+  ```bash
   docker history image_name
   ```
 
 6. **Saving and Exporting the Image**
-- If you want to export the image to a .tar (for backup and transfers) 
+
+- If you want to export the image to a .tar (for backup and transfers)
   ```bash
   docker save -o image_name.tar image_name
   ```
@@ -150,4 +160,4 @@ ENTRYPOINT echo Hello $MY_NAME, you are logged in as $(whoami) && bash
   ```bash
   docker load -i image_name.tar
   ```
-In summary, you can do a lot with your Dockerfiles, for a more in depth guide, visit [Dockerfile overview](https://docs.docker.com/build/concepts/dockerfile/#dockerfile)
+  In summary, you can do a lot with your Dockerfiles, for a more in depth guide, visit [Dockerfile overview](https://docs.docker.com/build/concepts/dockerfile/#dockerfile)

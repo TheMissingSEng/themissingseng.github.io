@@ -29,23 +29,25 @@ Github is a platform made for hosting and managing Git repositories. It allows y
    Now this repo is on your local git and you are free to make changes to and modify your project
 
 ---
+
 ## Cloning
-Clone creates a copy of a remote repo in your local git repo (from the internet onto your computer). It can be done by clicking the green code button, which will open a dropdown menu. You should see... 
+
+Clone creates a copy of a remote repo in your local git repo (from the internet onto your computer). It can be done by clicking the green code button, which will open a dropdown menu. You should see...
+
 - **HTTPS:** the easiest and most common way to clone a repo, but it requires authentication to push changes.
-   ```bash
-   git clone https://github.com/user/repo.git
-   ```
+  ```bash
+  git clone https://github.com/user/repo.git
+  ```
 - **SSH:** uses a key that you set up to your account, this makes your life easier and lets you push without needing authentication. This method is faster and more secure than HTTPS.
-   ```bash
-   git clone git@github.com:user/repo.git
-   ```
+  ```bash
+  git clone git@github.com:user/repo.git
+  ```
 - **GitHub CLI:** you can clone quickly if you have GitHubCLI installed. This removes the need to manually enter a URL
-   ```bash
-   gh repo clone user/repo
-   ```
+  ```bash
+  gh repo clone user/repo
+  ```
 
 **Recommendation:** Set up an SSH key for GitHub to make pushing and pulling projects easier, avoiding repeated authentication prompts. Since you're likely copying the clone URL from GitHub anyway, the GitHub CLI’s URL-free cloning isn’t a major advantage. SSH is your best bet for long-term convenience.
-
 
 ---
 

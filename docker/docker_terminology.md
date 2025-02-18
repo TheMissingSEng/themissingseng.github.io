@@ -26,6 +26,7 @@ The Docker Engine can be thought of as the heart of the docker program and it co
 - **_Docker Rest API_** : A way for the tools to interact with Docker programmatically.
 
 ### Images
+
 Think of the image as a blueprint that contains the extra libraries, dependencies and runtime of your code.
 
 ### Containers
@@ -34,11 +35,11 @@ Containers are the actual utilization of the Images, running in a separate envir
 
 ### Volumes
 
-Volumes store data that a container uses and generates (*sort of like a save file*) This is important because when containers stop running, the data inside the container is lost. Volumes will save the data so that it can be used again later.
+Volumes store data that a container uses and generates (_sort of like a save file_) This is important because when containers stop running, the data inside the container is lost. Volumes will save the data so that it can be used again later.
 
 ### Networks
 
-Networks allow containers to communicate with each other or connect to outside (*For example a webserver needing a database container*)
+Networks allow containers to communicate with each other or connect to outside (_For example a webserver needing a database container_)
 
 ### Registries
 
@@ -46,7 +47,7 @@ Registries resemble an app store format where images can be stored, shared and d
 
 ### Compose (_Advanced Topic_)
 
-Simply put, Docker compose is a tool that allows you to manage and interface all your docker containers in a single file (*Stored in a "**_YAML ~ .yml_** format*)
+Simply put, Docker compose is a tool that allows you to manage and interface all your docker containers in a single file (_Stored in a "***YAML ~ .yml*** format_)
 
 ---
 
