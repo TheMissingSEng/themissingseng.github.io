@@ -19,8 +19,8 @@ A branch is like a copy of your project where you can make changes without affec
 
 - You can check your current branch by typing
   `bash
-    git branch
-    `
+  git branch
+  `
   **Note:** Your current branch that you are in will be highlighted is some way
 
 - **branch** will also create a new branch if you insert a name after it
